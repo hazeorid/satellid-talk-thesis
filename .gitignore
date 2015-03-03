@@ -1,5 +1,3 @@
-demo.pdf
-
 *.fls
 *.acn
 *.acr
@@ -33,3 +31,4 @@ demo.pdf
 *.vrb
 *.xdy
 *.tdo
+

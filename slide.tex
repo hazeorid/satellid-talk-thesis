@@ -1,14 +1,10 @@
 \documentclass[10pt, compress]{beamer}
-
 \usetheme{m}
-
 \usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
+\usepackage[ampersand]{easylist}
 \usepackage{minted}
-
+\usemintedstyle{manni}
 \usepgfplotslibrary{dateplot}
-
-\usemintedstyle{trac}
 
 \title{Satellid: Personal Knowledge Manager}
 \subtitle{with Web Technologies}
@@ -22,26 +18,59 @@
 
 \maketitle
 
+% Introduction: 2 min
+% Literature study: 5 min
+% Analysis and design: 3 min
+% Implementation: 2 min
+% Conclusion: 2 min
+% Suggestion: 1 min
+
+% ============================================================
+
+\begin{frame}[fragile]
+  \frametitle{Outline}
+
+  \begin{description}
+    \item[Introduction]: Background, Objective, Scope
+    \item[Literature Study]: KMS, SDLC, Design Pattern, Database, Programming, Platform, Framework, Soft. Testing, SCM
+    \item[Analysis \& Design]: Target User, User Types, User Stories, Contextual System, Functionality Flow, App Architecture, User Interface \& Interaction
+    \item[Implementation \& Testing]: Agile Development, Code, and Test
+    \item[Conclusion \& Suggestion]
+  \end{description}
+
+\end{frame}
+
 % ============================================================
 
 \section{Introduction}
 
 % ------------------------------------------------------------
 
-\begin{frame}{Introduction}
+\begin{frame}[fragile]
+  \frametitle{Introduction}
 
   \begin{block}{Background}
-    Solve a problem around daily knowledge management.
-  Need for tool and system to make it more effective.
+    Solve a problem around \alert{\emph{daily knowledge management}}.\\
+    Need for tool and system to make it more effective.
   \end{block}
 
   \begin{block}{Objective}
-    Defining and proposing the solution of managing daily knowledge or information for personal users in casual way, called ``Satellid knowledge manager'' to met the solution.
+    Defining and proposing the solution of managing daily knowledge or information for personal users in casual way, called\\ \alert{``Satellid knowledge manager''} to met the solution.
   \end{block}
 
   \begin{block}{Scope}
-    Create a \emph{simpler system} to do daily knowledge management for personal use with \textsc{CRUD} and search features.
+    \alert{Create a \emph{simpler system}} to do daily knowledge management for personal use with basic \textsc{browse, read, edit, add, delete} (BREAD) features.
   \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+
+  \begin{center}
+  How to manage tons of personal knowledge we have with just a simple system of knowledge manager?
+  \end{center}
 
 \end{frame}
 
@@ -51,95 +80,206 @@
 
 % ------------------------------------------------------------
 
-\begin{frame}{Sections}
+\begin{frame}[fragile]
+  \frametitle{Literature Study (1)}
 
+  \begin{block}{Knowledge Management System}
+    Data-Information-Knoweldge-Wisdom (\alert{DIKW}),\\
+    Knowledge Management System (\alert{KMS}), \alert{Personal Knowledge Manager}
+  \end{block}
+
+  \begin{block}{Software Development Life Cycle}
+    \alert{Agile} methodologies, Minimum Viable Product (\alert{MVP}), unit testing
+  \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Literature Study (2)}
+
+  \begin{block}{Design Pattern}
+    \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
+    simple interaction and interface design with mockup
+  \end{block}
+
+  \begin{block}{Database}
+    \alert{NoSQL}, document database, \alert{MongoDB}
+  \end{block}
+
+  \begin{block}{Programming}
+    \alert{JavaScript}, \alert{JSON}, \alert{Node.js}, web application, \alert{framework}, full stack framework called \alert{Meteor}, source code management (\alert{SCM}) with \alert{Git}
+  \end{block}
+
+\end{frame}
+
+% ============================================================
+
+\section{Analysis \& Design}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Analysis (1)}
+  \begin{columns}[onlytextwidth]
+
+    \column{0.5\textwidth}
+      Target user:\\
+      (image)
+
+    \column{0.5\textwidth}
+      User Types:\\
+      (image)
+
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Analysis (2)}
+
+  Agile User Stories
+  \begin{enumerate} \itemsep0pt
+    \item As a System, I need to be run on supported platform and via a network
+    \item As a System, I can have the data imported without the app opened
+    \item As a User, I want to use the app via web browser
+    \item As a User, I want to read knowledge that already stored
+    \item As a User, I want to search a knowledge and view the search result
+    \item As a User, I want to add a new knowledge based on context
+    \item As a User, I want to delete a stored knowledge
+    \item As a User, I want to edit a stored knowledge
+  \end{enumerate}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design (1)}
+
+  \begin{center}
+  Contextual System
+
+  (image)
+  \end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design (2)}
+
+  \begin{center}
+  Functionality Flow
+
+  (image)
+  \end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design (3)}
+
+  \begin{center}
+  Application Architecture
+
+  (image)
+  \end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design (4)}
+
+  \begin{center}
+  User Interface and Interaction
+
+  (image)
+  \end{center}
+
+\end{frame}
+
+% ============================================================
+
+\section{Implementation \& Testing}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Implementation (1)}
+
+  Snippets of Server Code
   \begin{minted}[fontsize=\small]{javascript}
-    var a = 10;
+    var snippets = "code";
+  \end{minted}
+
+  Snippets of Client Code
+  \begin{minted}[fontsize=\small]{javascript}
+    var snippets = "code";
   \end{minted}
 
 \end{frame}
 
-% ============================================================
-
-\section{Analysis and Design}
-
 % ------------------------------------------------------------
 
-\begin{frame}{Analysis}
-  
-  Target User
-  
-  Functionality Flow
+\begin{frame}[fragile]
+  \frametitle{Implementation (2)}
+
+  [Application Screenshot]
 
 \end{frame}
 
 % ------------------------------------------------------------
 
-\begin{frame}{Design}
-  
-  App Architecture
-  
-  User Interface and Interaction
-  
-  System and Process
+\begin{frame}[fragile]
+  \frametitle{Testing}
+
+  [Unit Testing Screenshot]
 
 \end{frame}
 
 % ============================================================
 
-\section{Implementation and Testing}
+\section{Closing}
 
 % ------------------------------------------------------------
 
-\begin{frame}{Development}
+\begin{frame}[fragile]
+  \frametitle{Conclusion}
 
-  Agile
-  
-  Code
+  \begin{enumerate}
+    \item Simple system of managing tons of personal knowledge
+    \item Flexible data schema combined with template
+    \item Template based on context
+    \item Implementation with Web technologies
+  \end{enumerate}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
-\begin{frame}{Testing}
+\begin{frame}[fragile]
+  \frametitle{Suggestion \& Future Work}
 
-  Unit Test
+  There could be some inadequacy, so further and iterated improvement will remain to be done continuously
+
+  \begin{block}{Feature Roadmap:}
+    Account system, easy import \& export, more predefined context and field, BREAD the template, more custom configuration, multimedia support, integration with other networks, encryption, etc
+  \end{block}
 
 \end{frame}
 
 % ============================================================
-
-\section{Closing/Summary}
-
-% ------------------------------------------------------------
-
-\begin{frame}{Conclusion}
-
-Simple system of managing tons of personal knowledge
-
-Flexible data schema
-
-Web technologies
-
-Template based on context
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}{Suggestion}
-
-There could be some inadequacy, so further and iterated improvement are required
-
-Feature roadmap
-
-\end{frame}
-
-% ------------------------------------------------------------
 
 \plain{Thank You}
 
 % ------------------------------------------------------------
 
 \end{document}
-

@@ -18,20 +18,13 @@
 
 \maketitle
 
-% Introduction: 2 min
-% Literature study: 5 min
-% Analysis and design: 3 min
-% Implementation: 2 min
-% Conclusion: 2 min
-% Suggestion: 1 min
-
 % ============================================================
 
 \begin{frame}[fragile]
   \frametitle{Outline}
 
   \begin{description}
-    \item[Introduction]: Background, Objective, Scope
+    \item[Introduction]: Background, Problem Statements, Objectives, Scope
     \item[Literature Study]: KMS, SDLC, Design Pattern, Database, Programming, Platform, Framework, Soft. Testing, SCM
     \item[Analysis \& Design]: Target User, User Types, User Stories, Contextual System, Functionality Flow, App Architecture, User Interface \& Interaction
     \item[Implementation \& Testing]: Agile Development, Code, and Test
@@ -47,20 +40,10 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Introduction}
 
-  \begin{block}{Background}
-    Solve a problem around \alert{\emph{daily knowledge management}}.\\
-    Need for tool and system to make it more effective.
-  \end{block}
-
-  \begin{block}{Objective}
-    Defining and proposing the solution of managing daily knowledge or information for personal users in casual way, called\\ \alert{``Satellid knowledge manager''} to met the solution.
-  \end{block}
-
-  \begin{block}{Scope}
-    \alert{Create a \emph{simpler system}} to do daily knowledge management for personal use with basic \textsc{browse, read, edit, add, delete} (BREAD) features.
-  \end{block}
+  \begin{center}
+  There are tons of daily personal knowledge that must be managed, but can't be handled with regular tools.
+  \end{center}
 
 \end{frame}
 
@@ -69,8 +52,65 @@
 \begin{frame}[fragile]
 
   \begin{center}
-  How to manage tons of personal knowledge we have with just a simple system of knowledge manager?
+  How to manage tons of daily personal knowledge we have with just a simple and single system of knowledge manager that implemented with Web technologies?
   \end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Introduction: Background}
+
+  \begin{block}{Background}
+    Solve a problem around \alert{\emph{daily knowledge management}}.\\
+    Need for tool and system to make it more effective.
+    ...
+  \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Introduction: Problem Definition}
+
+  \begin{block}{Problem Definition}
+    \begin{enumerate}
+      \item How to manage tons of personal or even collective knowledge we have with just a simple and single system of knowledge manager?
+      \item How can knowledge manager naturally structure the data into knowledge that has context?
+    \end{enumerate}
+  \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Introduction: Objectives}
+
+  \begin{block}{Objectives}
+    \begin{itemize} \itemsep0pt
+      \item Define and develop a new kind of knowledge management system (KMS) or knowledge manager called \alert{``Satellid knowledge manager''} to met the solution.
+      \item It utilize knowledge template which use context and structure, to store and managing personal daily knowledge.
+      \item Developed and built using Web technologies.
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Introduction: Problem Scope}
+
+  \begin{block}{Scope}
+    \begin{itemize} \itemsep0pt
+      \item \alert{Create a \emph{simpler system}} to do daily knowledge management for personal use with \alert{basic \textsc{browse, read, edit, add, delete} (BREAD) features}.
+      \item The main methodologies are agile, MVP, and ATDD.
+      \item The tools are MongoDB, JavaScript/CoffeeScript, JSON, Node.js, Meteor framework, and Git.
+    \end{itemize}
+  \end{block}
 
 \end{frame}
 
@@ -80,8 +120,36 @@
 
 % ------------------------------------------------------------
 
+\begin{frame}
+  \frametitle{Literature Study}
+
+  \begin{figure}[ht]
+    \vspace{-25pt}
+    \centering
+    \includegraphics[width=11cm]{include/literature-fundamentals.png}
+    \label{fig:literature-fundamentals}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Literature Study}
+
+  \begin{figure}[ht]
+    \vspace{-25pt}
+    \centering
+    \includegraphics[width=11cm]{include/literature-technologies.png}
+    \label{fig:literature-technologies}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
 \begin{frame}[fragile]
-  \frametitle{Literature Study (1)}
+  \frametitle{Literature Study}
 
   \begin{block}{Knowledge Management System}
     Data-Information-Knoweldge-Wisdom (\alert{DIKW}),\\
@@ -89,7 +157,8 @@
   \end{block}
 
   \begin{block}{Software Development Life Cycle}
-    \alert{Agile} methodologies, Minimum Viable Product (\alert{MVP}), unit testing
+    \alert{Agile} methodologies, Minimum Viable Product (\alert{MVP}),\\
+    Acceptance Test Driven Development (\alert{ATDD})
   \end{block}
 
 \end{frame}
@@ -97,11 +166,12 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Literature Study (2)}
+  \frametitle{Literature Study}
 
   \begin{block}{Design Pattern}
     \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
-    simple interaction and interface design with mockup
+    simple interaction and interface design with mockup,\\
+    and Single Page Application (\alert{SPA})
   \end{block}
 
   \begin{block}{Database}
@@ -120,25 +190,38 @@
 
 % ------------------------------------------------------------
 
-\begin{frame}[fragile]
-  \frametitle{Analysis (1)}
-  \begin{columns}[onlytextwidth]
+\begin{frame}
+  \frametitle{Satellid}
 
-    \column{0.5\textwidth}
-      Target user:\\
-      (image)
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=8cm]{include/satellid-logo.png}
+    \label{fig:satellid-logo}
+  \end{figure}
 
-    \column{0.5\textwidth}
-      User Types:\\
-      (image)
-
-  \end{columns}
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Analysis (2)}
+  \frametitle{Analysis}
+
+    \begin{block}{Target user:}
+      Person who frequently gather and need to manage their knowledge at almost everytime.
+    \end{block}
+
+    \begin{block}{User Types:}
+      New user, existing user, regular person, researcher, engineer,
+      developer, designer, information architect, event speaker,
+      student, teacher, leader, collaborator, colleagues, recruiter, etc
+    \end{block}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Analysis}
 
   Agile User Stories
   \begin{enumerate} \itemsep0pt
@@ -146,7 +229,7 @@
     \item As a System, I can have the data imported without the app opened
     \item As a User, I want to use the app via web browser
     \item As a User, I want to read knowledge that already stored
-    \item As a User, I want to search a knowledge and view the search result
+    \item As a User, I want to search a knowledge and browse the search result
     \item As a User, I want to add a new knowledge based on context
     \item As a User, I want to delete a stored knowledge
     \item As a User, I want to edit a stored knowledge
@@ -157,52 +240,89 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Design (1)}
+  \frametitle{Design}
 
-  \begin{center}
-  Contextual System
-
-  (image)
-  \end{center}
+  \begin{block}{Contextual System}
+    A data and template approach to classify the knowledge with its context and structure.
+  \end{block}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Design (2)}
+  \frametitle{Design}
 
-  \begin{center}
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=9cm]{include/satellid-contextual.png}
+    \caption{Contextual System}
+    \label{fig:satellid-contextual}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design}
+
   Functionality Flow
-
-  (image)
-  \end{center}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Design (3)}
-
-  \begin{center}
-  Application Architecture
-
-  (image)
-  \end{center}
+  \begin{enumerate} \itemsep0pt
+    \item Turn on and turn off the System via terminal/CLI.
+    \item Access and use the System via Web browser.
+    \item Type and search in the search bar that could automatically show the search result.
+    \item Browse the existing knowledge or search result in the collection of cards.
+    \item Add a knowledge that will show the form box to fill.
+    \item Edit a knowledge with edit mode of form box.
+    \item Delete a knowledge.
+  \end{enumerate}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Design (4)}
+  \frametitle{Design}
 
-  \begin{center}
-  User Interface and Interaction
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[height=6.5cm]{include/satellid-app-arch.png}
+    \caption{Application Architecture}
+    \label{fig:satellid-app-arch}
+  \end{figure}
 
-  (image)
-  \end{center}
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[height=7.5cm]{include/satellid-app-ui.png}
+    \caption{User Interface Mockup Design}
+    \vspace{-20pt}
+    \label{fig:satellid-ui}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[width=8cm]{include/satellid-app-uix.png}
+    \vspace{-20pt}
+    \caption{User Interaction Design}
+    \label{fig:satellid-uix}
+  \end{figure}
 
 \end{frame}
 
@@ -213,16 +333,26 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Implementation (1)}
+  \frametitle{Implementation}
 
   Snippets of Server Code
   \begin{minted}[fontsize=\small]{javascript}
-    var snippets = "code";
+    if (Meteor.isServer) {
+      Meteor.startup(function() {
+        ...
+      });
+    }
   \end{minted}
 
   Snippets of Client Code
   \begin{minted}[fontsize=\small]{javascript}
-    var snippets = "code";
+    if (Meteor.isClient) {
+      Template.add.events({
+        "click button": function() {
+          ...
+        }
+      });
+    }
   \end{minted}
 
 \end{frame}
@@ -230,9 +360,17 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Implementation (2)}
+  \frametitle{Implementation}
 
-  [Application Screenshot]
+  \begin{figure}[ht]
+    \centering
+    %TODO-SCREEN
+    \vspace{-25pt}
+    \includegraphics[height=7.5cm]{include/satellid-app-result.png}
+    \vspace{-10pt}
+    \caption{Application Result Screenshot}
+    \label{fig:satellid-app-result}
+  \end{figure}
 
 \end{frame}
 
@@ -241,7 +379,12 @@
 \begin{frame}[fragile]
   \frametitle{Testing}
 
-  [Unit Testing Screenshot]
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[height=6.5cm]{include/satellid-app-test.png}
+    \caption{Testing Screenshot}
+    \label{fig:satellid-app-test}
+  \end{figure}
 
 \end{frame}
 
@@ -255,10 +398,10 @@
   \frametitle{Conclusion}
 
   \begin{enumerate}
-    \item Simple system of managing tons of personal knowledge
+    \item Simple and single system of managing tons of personal daily knowledge
+    \item Implementation with Web technologies
     \item Flexible data schema combined with template
     \item Template based on context
-    \item Implementation with Web technologies
   \end{enumerate}
 
 \end{frame}
@@ -270,7 +413,7 @@
 
   There could be some inadequacy, so further and iterated improvement will remain to be done continuously
 
-  \begin{block}{Feature Roadmap:}
+  \begin{block}{Future Feature Roadmap:}
     Account system, easy import \& export, more predefined context and field, BREAD the template, more custom configuration, multimedia support, integration with other networks, encryption, etc
   \end{block}
 

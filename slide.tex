@@ -55,7 +55,7 @@
   \begin{center}
   \alert{Daily personal knowledge} are things like details of:
   \begin{itemize} \itemsep0pt
-    \item people profile and contacts
+    \item people profiles and contacts
     \item list of organizations and companies
     \item glossary of definition
     \item hardware and software product listing
@@ -66,6 +66,8 @@
     \item and lot of other miscellaneous things
   \end{itemize}
 
+  \alert{All of these are context of knowledge}
+
   \end{center}
 
 \end{frame}
@@ -75,9 +77,9 @@
 \begin{frame}[fragile]
 
   \begin{center}
-    There are a lot of tools and systems for each of them.
+    There are a \alert{lot of tools and systems} for each of them.
 
-    \alert{Need for just a single system}
+    There is a \alert{need for a single system}
   \end{center}
 
 \end{frame}
@@ -87,7 +89,7 @@
 \begin{frame}[fragile]
 
   \begin{center}
-  How to manage those \alert{daily personal knowledge} with single system?
+  How to manage those \alert{daily personal knowledge} with \alert{single system}?
   % So how to manage those tons of daily personal knowledge we have with just a simple and single system of knowledge manager that implemented with Web technologies?
   \end{center}
 
@@ -99,7 +101,7 @@
   \frametitle{Primary Background}
 
   Solve a problem around \alert{\emph{daily knowledge management}} \\
-  with a system to make it more effective.
+  with a system that is personal
 
 \end{frame}
 
@@ -108,8 +110,8 @@
 \begin{frame}[fragile]
   \frametitle{Primary Objective}
 
-  Define and develop a knowledge manager called\\
-  \alert{``Satellid knowledge manager''},
+  Define and develop a personal knowledge manager called\\
+  \alert{``Satellid knowledge manager''},\\
   that built using Web technologies.
   % utilize knowledge template which use context and structure, to store and managing personal daily knowledge.
 
@@ -133,10 +135,10 @@
   \frametitle{Problem Scope}
 
   \begin{itemize} \itemsep0pt
-    \item Create a \alert{\emph{simpler system}} to do daily knowledge management for personal use
+    \item Create a \alert{simple system} to do \alert{daily knowledge management} for \alert{personal} use
     % with \alert{basic \textsc{browse, read, edit, add, delete} (BREAD) features}.
-    \item The main methodologies are agile, MVP, and ATDD.
-    \item The main technologies are MongoDB, JavaScript, and Meteor framework.
+    \item The main methodologies are \alert{agile}, \alert{MVP}, and \alert{ATDD}.
+    \item The main technologies are \alert{MongoDB}, \alert{JavaScript}, and \alert{Meteor framework}.
   \end{itemize}
 
 \end{frame}
@@ -149,8 +151,14 @@
 
 \begin{frame}[fragile]
   \frametitle{Knowledge Management System}
+  \centering
 
-  Data-Information-Knoweldge-Wisdom (\alert{DIKW}),\\
+  \begin{figure}[ht]
+    \vspace{-2cm}
+    \includegraphics[width=8cm]{include/literature-kms.png}
+  \end{figure}
+
+  Data-Information-Knowledge-Wisdom (\alert{DIKW}),\\
   Knowledge Management System (\alert{KMS}),\\
   \alert{Personal Knowledge Manager}
 
@@ -160,6 +168,12 @@
 
 \begin{frame}[fragile]
   \frametitle{Software Development Life Cycle (SDLC)}
+  \centering
+
+  \begin{figure}[ht]
+    \vspace{-1cm}
+    \includegraphics[width=11cm]{include/literature-sdlc.png}
+  \end{figure}
 
   \alert{Agile} methodologies,\\
   Minimum Viable Product (\alert{MVP}),\\
@@ -171,6 +185,12 @@
 
 \begin{frame}[fragile]
   \frametitle{Design Pattern}
+  \centering
+
+  \begin{figure}[ht]
+    \vspace{-1cm}
+    \includegraphics[width=11cm]{include/literature-design-pattern.png}
+  \end{figure}
 
   \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
   simple interaction and interface design with mockup,\\
@@ -182,6 +202,12 @@
 
 \begin{frame}[fragile]
   \frametitle{Database}
+  \centering
+
+  \begin{figure}[ht]
+    \vspace{-1cm}
+    \includegraphics[width=8cm]{include/literature-database.png}
+  \end{figure}
 
   Document-based \alert{NoSQL} database called \alert{MongoDB}
 
@@ -191,10 +217,17 @@
 
 \begin{frame}[fragile]
   \frametitle{Programming}
+  \centering
+
+  \begin{figure}[ht]
+    \vspace{-1cm}
+    %\includegraphics[width=8cm]{include/literature-programming.png}
+  \end{figure}
 
   With \alert{JavaScript} related technologies,\\
   build a Web application,\\
-  that use full stack framework called \alert{Meteor}
+  that use full stack framework called \alert{Meteor},\\
+  controlled using \alert{Git}
   % full stack = frontend + backend
 
 \end{frame}
@@ -206,23 +239,10 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Satellid}
-
-  \begin{figure}[ht]
-    \centering
-    \includegraphics[width=8cm]{include/satellid-logo.png}
-    \label{fig:satellid-logo}
-  \end{figure}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
   \frametitle{Analysis}
 
     \begin{block}{Target user:}
-      Person who frequently gather and need to manage their knowledge at almost everytime.
+      Person who frequently gather and really want to manage their tons of knowledge at almost everytime
     \end{block}
 
 \end{frame}
@@ -262,7 +282,6 @@
   \begin{figure}[ht]
     \centering
     \vspace{-25pt}
-    %TODO
     \includegraphics[height=8.5cm]{include/satellid-app-arch.png}
     \vspace{-10pt}
     \caption{Application Architecture}
@@ -305,26 +324,10 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{App Result}
-
-  After running in local,
-  app result is available at\\
-  \url{localhost:3000}
-
-  After deploying,
-  app result is available at\\
-  \url{http://satellid.meteor.com}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
   \frametitle{App Result Screenshots: READ}
 
   \begin{figure}[ht]
     \centering
-    %TODO-SCREEN
     \vspace{-1cm}
     \includegraphics[height=10cm]{include/satellid-app-results_read.png}
     \vspace{-10pt}
@@ -340,7 +343,6 @@
 
   \begin{figure}[ht]
     \centering
-    %TODO-SCREEN
     \vspace{-1cm}
     \includegraphics[height=10cm]{include/satellid-app-results_browse.png}
     \vspace{-10pt}
@@ -356,7 +358,6 @@
 
   \begin{figure}[ht]
     \centering
-    %TODO-SCREEN
     \vspace{-1cm}
     \includegraphics[height=10cm]{include/satellid-app-results_add.png}
     \vspace{-10pt}
@@ -372,7 +373,6 @@
 
   \begin{figure}[ht]
     \centering
-    %TODO-SCREEN
     \vspace{-1cm}
     \includegraphics[height=10cm]{include/satellid-app-results_edit.png}
     \label{fig:satellid-app-results_edit}
@@ -387,7 +387,6 @@
 
   \begin{figure}[ht]
     \centering
-    %TODO-SCREEN
     \vspace{-1cm}
     \includegraphics[height=10cm]{include/satellid-app-results_delete.png}
     \vspace{-10pt}
@@ -405,7 +404,7 @@
 \begin{frame}[fragile]
   \frametitle{Conclusion}
 
-  Simple and single \alert{system} of managing tons of \alert{personal daily knowledge}
+  Simple and \alert{single system} of managing tons of \alert{personal daily knowledge}
   that implemented with \alert{Web technologies}
 
 \end{frame}
@@ -413,35 +412,17 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Suggestion}
-
-  There could be some major issues, such as:
+  \frametitle{Suggestion for Future Work}
 
   \begin{itemize} \itemsep0pt
-    \item There is no custom form yet.
-    \item There is no easy way to import and export, including backup.
+    \item Can have custom form
+    \item Can easily import and export, including backup
+    \item \textsc{BREAD} a template
+    \item Multimedia support
+    \item Integration with other networks
+    \item Encryption
     % User start to use the app with a blank state, need to add all their present knowledge manually along the time.
   \end{itemize}
-
-  So further and iterated improvement will remain to be done continuously.
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Future Work}
-
-  \begin{block}{Major}
-    \begin{itemize} \itemsep0pt
-      \item Can have custom form yet.
-      \item Can easily import and export, even backup.
-    \end{itemize}
-  \end{block}
-
-  \begin{block}{Others}
-    Account system, more predefined context and field, \textsc{BREAD} the template, more custom configuration, multimedia support, integration with other networks, encryption, etc
-  \end{block}
 
 \end{frame}
 

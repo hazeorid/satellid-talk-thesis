@@ -10,7 +10,7 @@
 \subtitle{with Web Technologies}
 \date{18 March 2015}
 \author{Muhammad Haidar Hanif}
-\institute{Gunadarma University}
+\institute{Informatics Engineering - Gunadarma University}
 
 \begin{document}
 
@@ -24,10 +24,10 @@
   \frametitle{Outline}
 
   \begin{description}
-    \item[Introduction]: Background, Problem Statements, Objectives, Scope
-    \item[Literature Study]: KMS, SDLC, Design Pattern, Database, Programming, Platform, Framework, Soft. Testing, SCM
-    \item[Analysis \& Design]: Target User, User Types, User Stories, Contextual System, Functionality Flow, App Architecture, User Interface \& Interaction
-    \item[Implementation \& Testing]: Agile Development, Code, and Test
+    \item[Introduction]%: Background, Problem Statements, Objectives, Scope
+    \item[Literature Study]%: KMS, SDLC, Design Pattern, Database, Programming, Platform, Framework, Soft. Testing, SCM
+    \item[Analysis \& Design]%: Target User, User Types, User Stories, Contextual System, Functionality Flow, App Architecture, User Interface \& Interaction
+    \item[Implementation \& Testing]%: Agile Development, Code, Result, and Test
     \item[Conclusion \& Suggestion]
   \end{description}
 
@@ -42,7 +42,8 @@
 \begin{frame}[fragile]
 
   \begin{center}
-  There are tons of daily personal knowledge that must be managed, but can't be handled with regular tools.
+  There are tons of \alert{daily personal knowledge} that must be managed,
+  but they can't be handled with regular tools.
   \end{center}
 
 \end{frame}
@@ -52,7 +53,19 @@
 \begin{frame}[fragile]
 
   \begin{center}
-  How to manage tons of daily personal knowledge we have with just a simple and single system of knowledge manager that implemented with Web technologies?
+  \alert{Daily personal knowledge} are things like details of:
+  \begin{itemize} \itemsep0pt
+    \item people profile and contacts
+    \item list of organizations and companies
+    \item glossary of definition
+    \item hardware and software product listing
+    \item publication of books or presentations
+    \item known or visited places
+    \item upcoming and attended events
+    \item multimedia info such as music or video
+    \item and lot of other miscellaneous things
+  \end{itemize}
+
   \end{center}
 
 \end{frame}
@@ -60,57 +73,71 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Introduction: Background}
 
-  \begin{block}{Background}
-    Solve a problem around \alert{\emph{daily knowledge management}}.\\
-    Need for tool and system to make it more effective.
-    ...
-  \end{block}
+  \begin{center}
+    There are a lot of tools and systems for each of them.
 
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Introduction: Problem Definition}
-
-  \begin{block}{Problem Definition}
-    \begin{enumerate}
-      \item How to manage tons of personal or even collective knowledge we have with just a simple and single system of knowledge manager?
-      \item How can knowledge manager naturally structure the data into knowledge that has context?
-    \end{enumerate}
-  \end{block}
+    \alert{Need for just a single system}
+  \end{center}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Introduction: Objectives}
 
-  \begin{block}{Objectives}
-    \begin{itemize} \itemsep0pt
-      \item Define and develop a new kind of knowledge management system (KMS) or knowledge manager called \alert{``Satellid knowledge manager''} to met the solution.
-      \item It utilize knowledge template which use context and structure, to store and managing personal daily knowledge.
-      \item Developed and built using Web technologies.
-    \end{itemize}
-  \end{block}
+  \begin{center}
+  How to manage those \alert{daily personal knowledge} with single system?
+  % So how to manage those tons of daily personal knowledge we have with just a simple and single system of knowledge manager that implemented with Web technologies?
+  \end{center}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Introduction: Problem Scope}
+  \frametitle{Primary Background}
 
-  \begin{block}{Scope}
-    \begin{itemize} \itemsep0pt
-      \item \alert{Create a \emph{simpler system}} to do daily knowledge management for personal use with \alert{basic \textsc{browse, read, edit, add, delete} (BREAD) features}.
-      \item The main methodologies are agile, MVP, and ATDD.
-      \item The tools are MongoDB, JavaScript/CoffeeScript, JSON, Node.js, Meteor framework, and Git.
-    \end{itemize}
-  \end{block}
+  Solve a problem around \alert{\emph{daily knowledge management}} \\
+  with a system to make it more effective.
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Primary Objective}
+
+  Define and develop a knowledge manager called\\
+  \alert{``Satellid knowledge manager''},
+  that built using Web technologies.
+  % utilize knowledge template which use context and structure, to store and managing personal daily knowledge.
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Problem Definition}
+
+  \begin{enumerate}
+    \item How to manage tons of personal knowledge we have with just a simple and single system of knowledge manager?
+    \item How can knowledge manager naturally structure the data into knowledge that has context?
+  \end{enumerate}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Problem Scope}
+
+  \begin{itemize} \itemsep0pt
+    \item Create a \alert{\emph{simpler system}} to do daily knowledge management for personal use
+    % with \alert{basic \textsc{browse, read, edit, add, delete} (BREAD) features}.
+    \item The main methodologies are agile, MVP, and ATDD.
+    \item The main technologies are MongoDB, JavaScript, and Meteor framework.
+  \end{itemize}
 
 \end{frame}
 
@@ -120,67 +147,55 @@
 
 % ------------------------------------------------------------
 
-\begin{frame}
-  \frametitle{Literature Study}
+\begin{frame}[fragile]
+  \frametitle{Knowledge Management System}
 
-  \begin{figure}[ht]
-    \vspace{-25pt}
-    \centering
-    \includegraphics[width=11cm]{include/literature-fundamentals.png}
-    \label{fig:literature-fundamentals}
-  \end{figure}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Literature Study}
-
-  \begin{figure}[ht]
-    \vspace{-25pt}
-    \centering
-    \includegraphics[width=11cm]{include/literature-technologies.png}
-    \label{fig:literature-technologies}
-  \end{figure}
+  Data-Information-Knoweldge-Wisdom (\alert{DIKW}),\\
+  Knowledge Management System (\alert{KMS}),\\
+  \alert{Personal Knowledge Manager}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Literature Study}
+  \frametitle{Software Development Life Cycle (SDLC)}
 
-  \begin{block}{Knowledge Management System}
-    Data-Information-Knoweldge-Wisdom (\alert{DIKW}),\\
-    Knowledge Management System (\alert{KMS}), \alert{Personal Knowledge Manager}
-  \end{block}
-
-  \begin{block}{Software Development Life Cycle}
-    \alert{Agile} methodologies, Minimum Viable Product (\alert{MVP}),\\
-    Acceptance Test Driven Development (\alert{ATDD})
-  \end{block}
+  \alert{Agile} methodologies,\\
+  Minimum Viable Product (\alert{MVP}),\\
+  Acceptance Test Driven Development (\alert{ATDD})
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Literature Study}
+  \frametitle{Design Pattern}
 
-  \begin{block}{Design Pattern}
-    \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
-    simple interaction and interface design with mockup,\\
-    and Single Page Application (\alert{SPA})
-  \end{block}
+  \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
+  simple interaction and interface design with mockup,\\
+  Single Page Application (\alert{SPA})
 
-  \begin{block}{Database}
-    \alert{NoSQL}, document database, \alert{MongoDB}
-  \end{block}
+\end{frame}
 
-  \begin{block}{Programming}
-    \alert{JavaScript}, \alert{JSON}, \alert{Node.js}, web application, \alert{framework}, full stack framework called \alert{Meteor}, source code management (\alert{SCM}) with \alert{Git}
-  \end{block}
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Database}
+
+  Document-based \alert{NoSQL} database called \alert{MongoDB}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Programming}
+
+  With \alert{JavaScript} related technologies,\\
+  build a Web application,\\
+  that use full stack framework called \alert{Meteor}
+  % full stack = frontend + backend
 
 \end{frame}
 
@@ -190,7 +205,7 @@
 
 % ------------------------------------------------------------
 
-\begin{frame}
+\begin{frame}[fragile]
   \frametitle{Satellid}
 
   \begin{figure}[ht]
@@ -210,12 +225,6 @@
       Person who frequently gather and need to manage their knowledge at almost everytime.
     \end{block}
 
-    \begin{block}{User Types:}
-      New user, existing user, regular person, researcher, engineer,
-      developer, designer, information architect, event speaker,
-      student, teacher, leader, collaborator, colleagues, recruiter, etc
-    \end{block}
-
 \end{frame}
 
 % ------------------------------------------------------------
@@ -223,40 +232,23 @@
 \begin{frame}[fragile]
   \frametitle{Analysis}
 
-  Agile User Stories
-  \begin{enumerate} \itemsep0pt
-    \item As a System, I need to be run on supported platform and via a network
-    \item As a System, I can have the data imported without the app opened
-    \item As a User, I want to use the app via web browser
-    \item As a User, I want to read knowledge that already stored
-    \item As a User, I want to search a knowledge and browse the search result
-    \item As a User, I want to add a new knowledge based on context
-    \item As a User, I want to delete a stored knowledge
-    \item As a User, I want to edit a stored knowledge
-  \end{enumerate}
+    \begin{block}{User Types:}
+      Regular person, researcher, engineer, developer, designer,\\
+      information architect, event speaker, student, teacher,\\
+      leader, collaborator, colleagues, recruiter, etc
+    \end{block}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Design}
-
-  \begin{block}{Contextual System}
-    A data and template approach to classify the knowledge with its context and structure.
-  \end{block}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Design}
+  \frametitle{Design: Contextual System}
 
   \begin{figure}[ht]
     \centering
     \includegraphics[width=9cm]{include/satellid-contextual.png}
-    \caption{Contextual System}
+    \caption{A data and template approach to classify the knowledge with its context and structure.}
     \label{fig:satellid-contextual}
   \end{figure}
 
@@ -265,63 +257,16 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Design}
-
-  Functionality Flow
-  \begin{enumerate} \itemsep0pt
-    \item Turn on and turn off the System via terminal/CLI.
-    \item Access and use the System via Web browser.
-    \item Type and search in the search bar that could automatically show the search result.
-    \item Browse the existing knowledge or search result in the collection of cards.
-    \item Add a knowledge that will show the form box to fill.
-    \item Edit a knowledge with edit mode of form box.
-    \item Delete a knowledge.
-  \end{enumerate}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Design}
+  \frametitle{Design: Application Architecture}
 
   \begin{figure}[ht]
     \centering
-    \includegraphics[height=6.5cm]{include/satellid-app-arch.png}
+    \vspace{-25pt}
+    %TODO
+    \includegraphics[height=8.5cm]{include/satellid-app-arch.png}
+    \vspace{-10pt}
     \caption{Application Architecture}
     \label{fig:satellid-app-arch}
-  \end{figure}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Design}
-
-  \begin{figure}[ht]
-    \centering
-    \vspace{-25pt}
-    \includegraphics[height=7.5cm]{include/satellid-app-ui.png}
-    \caption{User Interface Mockup Design}
-    \vspace{-20pt}
-    \label{fig:satellid-ui}
-  \end{figure}
-
-\end{frame}
-
-% ------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Design}
-
-  \begin{figure}[ht]
-    \centering
-    \vspace{-25pt}
-    \includegraphics[width=8cm]{include/satellid-app-uix.png}
-    \vspace{-20pt}
-    \caption{User Interaction Design}
-    \label{fig:satellid-uix}
   \end{figure}
 
 \end{frame}
@@ -333,7 +278,7 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Implementation}
+  \frametitle{Implementation: Code}
 
   Snippets of Server Code
   \begin{minted}[fontsize=\small]{javascript}
@@ -348,7 +293,7 @@
   \begin{minted}[fontsize=\small]{javascript}
     if (Meteor.isClient) {
       Template.add.events({
-        "click button": function() {
+        "click": function() {
           ...
         }
       });
@@ -360,16 +305,30 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Implementation}
+  \frametitle{App Result}
+
+  After running in local,
+  app result is available at\\
+  \url{localhost:3000}
+
+  After deploying,
+  app result is available at\\
+  \url{http://satellid.meteor.com}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{App Result Screenshots: READ}
 
   \begin{figure}[ht]
     \centering
     %TODO-SCREEN
-    \vspace{-25pt}
-    \includegraphics[height=7.5cm]{include/satellid-app-result.png}
+    \vspace{-1cm}
+    \includegraphics[height=10cm]{include/satellid-app-results_read.png}
     \vspace{-10pt}
-    \caption{Application Result Screenshot}
-    \label{fig:satellid-app-result}
+    \label{fig:satellid-app-results_read}
   \end{figure}
 
 \end{frame}
@@ -377,13 +336,62 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Testing}
+  \frametitle{App Result Screenshots: BROWSE}
 
   \begin{figure}[ht]
     \centering
-    \includegraphics[height=6.5cm]{include/satellid-app-test.png}
-    \caption{Testing Screenshot}
-    \label{fig:satellid-app-test}
+    %TODO-SCREEN
+    \vspace{-1cm}
+    \includegraphics[height=10cm]{include/satellid-app-results_browse.png}
+    \vspace{-10pt}
+    \label{fig:satellid-app-results_browse}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{App Result Screenshots: ADD}
+
+  \begin{figure}[ht]
+    \centering
+    %TODO-SCREEN
+    \vspace{-1cm}
+    \includegraphics[height=10cm]{include/satellid-app-results_add.png}
+    \vspace{-10pt}
+    \label{fig:satellid-app-results_add}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{App Result Screenshots: EDIT}
+
+  \begin{figure}[ht]
+    \centering
+    %TODO-SCREEN
+    \vspace{-1cm}
+    \includegraphics[height=10cm]{include/satellid-app-results_edit.png}
+    \label{fig:satellid-app-results_edit}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{App Result Screenshots: DELETE}
+
+  \begin{figure}[ht]
+    \centering
+    %TODO-SCREEN
+    \vspace{-1cm}
+    \includegraphics[height=10cm]{include/satellid-app-results_delete.png}
+    \vspace{-10pt}
+    \label{fig:satellid-app-results_delete}
   \end{figure}
 
 \end{frame}
@@ -397,24 +405,42 @@
 \begin{frame}[fragile]
   \frametitle{Conclusion}
 
-  \begin{enumerate}
-    \item Simple and single system of managing tons of personal daily knowledge
-    \item Implementation with Web technologies
-    \item Flexible data schema combined with template
-    \item Template based on context
-  \end{enumerate}
+  Simple and single \alert{system} of managing tons of \alert{personal daily knowledge}
+  that implemented with \alert{Web technologies}
 
 \end{frame}
 
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Suggestion \& Future Work}
+  \frametitle{Suggestion}
 
-  There could be some inadequacy, so further and iterated improvement will remain to be done continuously
+  There could be some major issues, such as:
 
-  \begin{block}{Future Feature Roadmap:}
-    Account system, easy import \& export, more predefined context and field, BREAD the template, more custom configuration, multimedia support, integration with other networks, encryption, etc
+  \begin{itemize} \itemsep0pt
+    \item There is no custom form yet.
+    \item There is no easy way to import and export, including backup.
+    % User start to use the app with a blank state, need to add all their present knowledge manually along the time.
+  \end{itemize}
+
+  So further and iterated improvement will remain to be done continuously.
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Future Work}
+
+  \begin{block}{Major}
+    \begin{itemize} \itemsep0pt
+      \item Can have custom form yet.
+      \item Can easily import and export, even backup.
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Others}
+    Account system, more predefined context and field, \textsc{BREAD} the template, more custom configuration, multimedia support, integration with other networks, encryption, etc
   \end{block}
 
 \end{frame}

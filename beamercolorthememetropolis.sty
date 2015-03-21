@@ -9,7 +9,6 @@
 
 \ProvidesPackage{beamercolorthememetropolis}
 
-
 %}}}
 %{{{ --- Options ----------------------
 
@@ -35,13 +34,22 @@
 \definecolor{RoyalPurple}{rgb}{0.47, 0.32, 0.66}
 \definecolor{DarkGreen}{rgb}{0.0,0.4,0.0}
 
+\definecolor{GunadarmaPink}{HTML}{d739d6}
+
 \definecolor{mDarkBrown}{HTML}{604c38}
 \definecolor{mDarkTeal}{HTML}{23373b}
-
 \definecolor{mLightBrown}{HTML}{EB811B}
 \definecolor{mMediumBrown}{HTML}{C87A2F}
 
-\setbeamercolor{palette primary}{fg=mDarkTeal, bg=black!2}
+% Gunadarma Colors
+\setbeamercolor{palette primary}{fg=GunadarmaPink, bg=white}
+\setbeamercolor{palette secondary}{fg=white, bg=GunadarmaPink}
+\setbeamercolor{palette quaternary}{fg=GunadarmaPink}
+\setbeamercolor{palette tertiary}{fg=white, bg=GunadarmaPink}
+\setbeamercolor{palette on image}{fg=white, bg=transparent}
+
+% Original Colors
+\setbeamercolor{palette primary}{fg=mDarkTeal, bg=white}
 \setbeamercolor{palette secondary}{fg=white, bg=mDarkTeal}
 \setbeamercolor{palette quaternary}{fg=mDarkBrown}
 \setbeamercolor{palette tertiary}{fg=white, bg=mMediumBrown}
@@ -58,6 +66,7 @@
 \setbeamercolor{structure}{fg=mDarkTeal}
 
 \setbeamercolor{normal text}{fg=black!97}
+\setbeamercolor{alerted text}{fg=GunadarmaPink}
 \setbeamercolor{alerted text}{fg=mLightBrown}
 
 \setbeamercolor{footnote}{fg=mDarkTeal!50}

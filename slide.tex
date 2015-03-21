@@ -24,10 +24,10 @@
   \frametitle{Outline}
 
   \begin{description}
-    \item[Introduction]%: Background, Problem Statements, Objectives, Scope
-    \item[Literature Study]%: KMS, SDLC, Design Pattern, Database, Programming, Platform, Framework, Soft. Testing, SCM
-    \item[Analysis \& Design]%: Target User, User Types, User Stories, Contextual System, Functionality Flow, App Architecture, User Interface \& Interaction
-    \item[Implementation \& Testing]%: Agile Development, Code, Result, and Test
+    \item[Introduction]
+    \item[Literature Study]
+    \item[Analysis \& Design]
+    \item[Implementation \& Testing]
     \item[Conclusion \& Suggestion]
   \end{description}
 
@@ -75,7 +75,7 @@
     \includegraphics[width=10cm]{include/knowledge-tools.png}
   \end{figure}
 
-  There is a \alert{need for a personalized single system}
+  There is a \alert{need for a single personalized system}
 
 \end{frame}
 
@@ -94,8 +94,13 @@
 \begin{frame}[fragile]
   \frametitle{Primary Background}
 
-  Solve a problem around \alert{\emph{daily knowledge management}} \\
-  with a system that is personal
+  \begin{itemize} \itemsep0pt
+    \item Solve a problem around \alert{daily knowledge management} \\
+          with a system that is personal.
+    \item Essential knowledge are mostly separated into too many softwares.
+    \item Need for a simple and single personalized system.
+    \item Managing knowledge should use a knowledge manager.
+  \end{itemize}
 
 \end{frame}
 
@@ -104,8 +109,7 @@
 \begin{frame}[fragile]
   \frametitle{Primary Objective}
 
-  Define and develop a personal knowledge manager called\\
-  \alert{``Satellid knowledge manager''},\\
+  Define and develop a personal knowledge manager named \alert{``Satellid''},\\
   that built using Web technologies.
   % utilize knowledge template which use context and structure, to store and managing personal daily knowledge.
 
@@ -117,7 +121,7 @@
   \frametitle{Problem Definition}
 
   \begin{enumerate}
-    \item How to manage tons of personal knowledge we have with just a simple and single system of knowledge manager?
+    \item How to manage tons of personal knowledge with just a simple and single system of knowledge manager?
     \item How can knowledge manager naturally structure the data into knowledge that has context?
   \end{enumerate}
 
@@ -169,8 +173,8 @@
   \end{figure}
 
   \alert{Agile} methodologies,\\
-  Minimum Viable Product (\alert{MVP}),\\
-  Acceptance Test Driven Development (\alert{ATDD})
+  Minimum Viable Product (\alert{MVP})\\
+  %Acceptance Test Driven Development (\alert{ATDD})
 
 \end{frame}
 
@@ -186,7 +190,7 @@
   \end{figure}
 
   \textsc{browse, read, edit, add, delete} (\alert{BREAD}),\\
-  simple interaction and interface design with mockup,\\
+  simple interaction and interface design with \alert{mockup},\\
   Single Page Application (\alert{SPA})
 
 \end{frame}
@@ -201,7 +205,7 @@
     \includegraphics[width=8cm]{include/literature-database.png}
   \end{figure}
 
-  Document-based \alert{NoSQL} database called \alert{MongoDB}
+  Document-based \alert{NoSQL} database named \alert{MongoDB}
 
 \end{frame}
 
@@ -258,7 +262,7 @@
     \includegraphics[width=8cm]{include/literature-framework.png}
   \end{figure}
 
-  using \alert{full stack framework} called \alert{Meteor}
+  using \alert{full stack framework} named \alert{Meteor}
   % full stack = frontend + backend
 
 \end{frame}
@@ -273,7 +277,7 @@
     \includegraphics[width=8cm]{include/literature-testing.png}
   \end{figure}
 
-  \alert{software tested} in Acceptance Test Driven Development ()\alert{ATDD})
+  \alert{software tested} in Acceptance Test Driven Development (\alert{ATDD})
 
 \end{frame}
 
@@ -288,7 +292,7 @@
   \end{figure}
 
   source code is version controlled using \alert{Git}\\
-  and distributed via GitHub
+  and distributed via \alert{GitHub}
 
 \end{frame}
 
@@ -301,7 +305,7 @@
 \begin{frame}[fragile]
   \frametitle{Analysis}
 
-    \begin{block}{Target user:}
+    \begin{block}{Target User:}
       Person who frequently gather and really want to manage their tons of knowledge at almost everytime
     \end{block}
 
@@ -328,6 +332,7 @@
 
 \begin{frame}[fragile]
   \frametitle{Design: Contextual System}
+  \centering
 
   \begin{figure}[ht]
     \centering
@@ -355,6 +360,38 @@
 
 \end{frame}
 
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design: User Interface Mockup}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[height=8.5cm]{include/satellid-app-ui.png}
+    \vspace{-10pt}
+    \caption{User Interface Mockup Design}
+    \label{fig:satellid-app-ui}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Design: User Interaction}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[height=8.5cm]{include/satellid-app-uix.png}
+    \vspace{-10pt}
+    \caption{User Interaction Design}
+    \label{fig:satellid-app-uix}
+  \end{figure}
+
+\end{frame}
+
 % ============================================================
 
 \section{Implementation \& Testing}
@@ -368,7 +405,7 @@
   \begin{minted}[fontsize=\small]{javascript}
     if (Meteor.isServer) {
       Meteor.startup(function() {
-        ...
+        // ...
       });
     }
   \end{minted}
@@ -378,7 +415,7 @@
     if (Meteor.isClient) {
       Template.add.events({
         "click": function() {
-          ...
+          // ...
         }
       });
     }
@@ -495,6 +532,44 @@
 
 \plain{Thank You}
 
+% ============================================================
+
+\plain{Extra Notes}
+
 % ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Testing Result with Velocity}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[height=8.5cm]{include/satellid-app-test.png}
+    \vspace{-10pt}
+    \label{fig:satellid-app-test}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{SQL vs Document-based (NoSQL)}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-25pt}
+    \includegraphics[width=11cm]{include/literature-nosql.png}
+    \vspace{-10pt}
+    \label{fig:literature-nosql}
+  \end{figure}
+
+\end{frame}
+
+% ============================================================
+
+\plain{Thank You}
+
+% ============================================================
 
 \end{document}

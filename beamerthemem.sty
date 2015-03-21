@@ -5,9 +5,14 @@
 %
 % The initial template comes from the HSRM beamer theme by Benjamin Weiss, which
 % you can find at https://github.com/hsrmbeamertheme/hsrmbeamertheme.
-%
 
 \ProvidesPackage{beamerthemem}
+
+\usepackage{pifont}
+
+% Background
+%\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{beamer_background}
+%\setbeamertemplate{background}{\pgfuseimage{bg}}
 
 %{{{ --- Options ----------------------
 
@@ -63,14 +68,14 @@
     \ifx\inserttitlegraphic\@empty%
     \else%
     {
-    	% actual output of titlegraphic
-   	    \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par%
-    	% measurement and add negative vspace
-		\newdimen\logoheight
-		\setbox0=\vbox{\inserttitlegraphic}%
-		\logoheight=\ht0 \advance\logoheight by \dp0 %
-		\vspace*{-\logoheight}%
-		\vspace*{-1em}% I don't know why this additional negative space is needed
+      % actual output of titlegraphic
+         \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par%
+      % measurement and add negative vspace
+    \newdimen\logoheight
+    \setbox0=\vbox{\inserttitlegraphic}%
+    \logoheight=\ht0 \advance\logoheight by \dp0 %
+    \vspace*{-\logoheight}%
+    \vspace*{-1em}% I don't know why this additional negative space is needed
     }%
     \fi%
     \vfill
@@ -195,7 +200,7 @@
 \setlength{\leftmarginii}{1em}
 \setlength{\leftmarginiii}{1em}
 
-\newcommand{\itemBullet}{∙}
+\newcommand{\itemBullet}{\ding{228}}
 
 \setbeamertemplate{itemize item}{\itemBullet}
 \setbeamertemplate{itemize subitem}{\itemBullet}

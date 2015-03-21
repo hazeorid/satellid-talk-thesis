@@ -517,12 +517,12 @@
   \frametitle{Suggestion for Future Work}
 
   \begin{itemize} \itemsep0pt
+    \item More predefined context and field.
     \item Can have custom form
     \item Can easily import and export, including backup
     \item \textsc{BREAD} a template
     \item Multimedia support
     \item Integration with other networks
-    \item Encryption
     % User start to use the app with a blank state, need to add all their present knowledge manually along the time.
   \end{itemize}
 
@@ -535,6 +535,59 @@
 % ============================================================
 
 \plain{Extra Notes}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Satellid}
+
+  \begin{figure}[ht]
+    \centering
+    \vspace{-1cm}
+    %TODO\includegraphics[width=10cm]{include/satellite.jpg}
+    \label{fig:satellite}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Agile User Stories}
+
+  \begin{enumerate} \itemsep0pt
+    \item As a System, I need to be run on supported platform and via a network
+    \item As a System, I can have the data imported without the app opened
+    \item As a User, I want to use the app via web browser
+    \item As a User, I want to read knowledge that already stored
+    \item As a User, I want to search a knowledge and view the search result
+    \item As a User, I want to add a new knowledge based on context
+    \item As a User, I want to delete a stored knowledge
+    \item As a User, I want to edit a stored knowledge
+  \end{enumerate}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Example of Feature File}
+
+  \begin{minted}[fontsize=\small]{ruby}
+    Feature: Example feature title
+
+      As a user of this feature
+      I want to have these steps
+      So that I can have the expected result
+
+      Scenario: Specific situation description
+        Given a condition
+        And an other condition
+        When a performed action by someone
+        Then an output is presented
+  \end{minted}
+
+\end{frame}
 
 % ------------------------------------------------------------
 
@@ -568,7 +621,7 @@
 
 % ============================================================
 
-\plain{Thank You}
+\plain{Extra Notes}
 
 % ============================================================
 

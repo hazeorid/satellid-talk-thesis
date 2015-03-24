@@ -8,7 +8,7 @@
 
 \title{Satellid: Personal Knowledge Manager}
 \subtitle{with Web Technologies}
-\date{18 March 2015}
+\date{28 March 2015}
 \author{Muhammad Haidar Hanif}
 \institute{Informatics Engineering - Gunadarma University}
 
@@ -99,7 +99,7 @@
           with a system that is personal.
     \item Essential knowledge are mostly separated into too many softwares.
     \item Need for a simple and single personalized system.
-    \item Managing knowledge should use a knowledge manager.
+    \item Managing knowledge should use a \alert{knowledge manager}.
   \end{itemize}
 
 \end{frame}
@@ -399,6 +399,19 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
+  \frametitle{Satellid}
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=10cm]{include/satellid-logo.png}
+    \label{fig:satellid-logo}
+  \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
   \frametitle{Implementation: Code}
 
   Snippets of Server Code
@@ -506,8 +519,12 @@
 \begin{frame}[fragile]
   \frametitle{Conclusion}
 
-  Simple and \alert{single system} of managing tons of \alert{personal daily knowledge}
-  that implemented with \alert{Web technologies}
+  \begin{itemize}
+    \item Simple and \alert{single system} of managing tons of \alert{personal daily knowledge}
+          that implemented with \alert{Web technologies}
+    \item Satellid can be used for collecting and managing various daily personal knowledge,
+          for the easiness and embetterment of knowledge management.
+  \end{itemize}
 
 \end{frame}
 
@@ -518,11 +535,11 @@
 
   \begin{itemize} \itemsep0pt
     \item More predefined context and field.
-    \item Can have custom form
-    \item Can easily import and export, including backup
-    \item \textsc{BREAD} a template
-    \item Multimedia support
-    \item Integration with other networks
+    \item Can have custom form.
+    \item Can easily import and export, including backup.
+    \item \textsc{BREAD} a template.
+    \item Multimedia support.
+    \item Integration with other networks.
     % User start to use the app with a blank state, need to add all their present knowledge manually along the time.
   \end{itemize}
 
@@ -539,12 +556,12 @@
 % ------------------------------------------------------------
 
 \begin{frame}[fragile]
-  \frametitle{Satellid}
+  \frametitle{Satellite $\rightarrow$ Satellid}
 
   \begin{figure}[ht]
     \centering
     \vspace{-1cm}
-    %TODO\includegraphics[width=10cm]{include/satellite.jpg}
+    \includegraphics[width=10cm]{include/satellite.jpg}
     \label{fig:satellite}
   \end{figure}
 
@@ -616,6 +633,35 @@
     \vspace{-10pt}
     \label{fig:literature-nosql}
   \end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Contexts and Structures (1)}
+
+  \begin{description} \itemsep0pt
+    \item[Definition] Name, Description, Source, Author, URL
+    \item[Person] Name (Full, First, Last, Nick, Alias), Gender, Birth Date or Age, Title (Job), Biography, Location (Address, City, Country, \& Coordinates), Phone, Email, Website, URL
+    \item[Organization] Name, Type (School, University, Institution, Company, Group, Community, Band, etc), Industry, Date (Founded), Location (Address \& Coordinates), Product (their Services or Goods), URL
+    \item[Product] Name, Type (Service, Hardware, Software, Food, Clothing, etc), Tagline, Description, Brand Detail, URL
+    \item[Publication] Title, Type (Article, Book, Paper, Dictionary, Novel, Tutorial, Comic, Website, Blog, etc), Author, Description, URL
+  \end{description}
+
+\end{frame}
+
+% ------------------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Contexts and Structures (2)}
+
+  \begin{description} \itemsep0pt
+    \item[Place] Name, Type (Station, Library, Park, Shop, Restaurant, Mall, Hotel, City, Country, etc), Location (Address \& Coordinates), URL
+    \item[Event] Title, Type (Agenda, Exercise, Meetup, Seminar, Workshop, Conference, Festival, etc), Location (Address), Date, Presenter, Sponsor, URL
+    \item[Multimedia] Title, Type (Photo, Image, Video, Film, etc), Location, Date and Time (Published), Duration, Creator, URL
+    \item[Miscellaneous] Title, Text, URL
+  \end{description}
 
 \end{frame}
 
